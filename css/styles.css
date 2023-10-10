@@ -205,6 +205,8 @@ main.courses:after {
   bottom: 0;
   z-index: 2;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 @media(min-width:768px) {
