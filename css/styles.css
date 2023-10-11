@@ -175,7 +175,6 @@ main.courses:after {
 
 .functions__item-wrap {
   position: relative;
-  width: 152px;
   z-index: 3;
 }
 
@@ -232,10 +231,6 @@ main.courses:after {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 32px;
-  }
-
-  .functions__item-wrap {
-      width: 221px;
   }
 
   .functions__item {
@@ -813,12 +808,6 @@ select:disabled {
   display: none !important;
 }
 
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -875,7 +864,6 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
 }
 
 /* rtl:raw:
@@ -896,7 +884,6 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
 }
 
 output {
@@ -1075,15 +1062,24 @@ progress {
   margin-left: auto;
 }
 
+@media (max-width: 585px) {
+  #mainNav .navbar-brand {
+    font-size: 1.0em;
+    transition: font-size 0.3s;
+}
+}
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
+  .functions__item-wrap {
+    width: 160px;
+}
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
