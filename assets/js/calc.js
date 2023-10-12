@@ -75,7 +75,7 @@ function calcularPoligono(escolhaForma){ // Polígono Regular com N Lados: Peça
     var lado = parseFloat(document.getElementById('lado').value);
     var apotemo = parseFloat(document.getElementById('area').value);
 
-    area = lado * 5 * apotemo;
+    area = (lado * 5) * apotemo;
     console.log("teste");
     
   }else if (escolhaForma === losango) {
@@ -84,7 +84,9 @@ function calcularPoligono(escolhaForma){ // Polígono Regular com N Lados: Peça
 
     area = (diagonal1 * diagonal2) / 2;
   } else if (escolhaForma === quadrilatero) {
-    var lados = parseFloat(prompt("Informe o valor do lado do quadrilátero"));
+    console.log("Funciona");
+    var lados = parseFloat(document.getElementById('area').value);
+    console.log("Funciona");
 
     area = Math.pow(lados, 2);
   }

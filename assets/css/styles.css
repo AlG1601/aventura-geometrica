@@ -1061,11 +1061,26 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+#polygons {
+  height: 75vh;
+}
 
-@media (max-width: 585px) {
+@media (min-width: 300px) {
+  #mainNav .navbar-brand {
+    font-size: 0.6em;
+    transition: font-size 0.3s;;
+}
+}
+@media (min-width: 400px) {
+  #mainNav .navbar-brand {
+    font-size: 0.8em;
+    transition: font-size 0.3s;;
+}
+}
+@media (min-width: 500px) {
   #mainNav .navbar-brand {
     font-size: 1.0em;
-    transition: font-size 0.3s;
+    transition: font-size 0.3s;;
 }
 }
 @media (min-width: 576px) {
